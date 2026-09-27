@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Rclone Drive Sync</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; color: #666; font-size: .9rem; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Rclone Drive Sync &mdash; last updated 14 September 2026</p>
+
+<p>
+  This policy explains how Rclone Drive Sync (the "app") accesses, uses, stores,
+  and shares information when it connects to a Google Account. The app is a
+  private automation operated by a single individual for their own files; it has
+  no other users and no public interface.
+</p>
+
+<h2>1. What Google user data the app accesses</h2>
+<p>
+  The app requests a single Google Drive permission:
+  <code>https://www.googleapis.com/auth/drive.file</code>.
+</p>
+<p>
+  This scope allows access <strong>only to files and folders that the app itself
+  creates</strong>, plus files the user explicitly opens with the app. The app
+  <strong>cannot</strong> see, read, list, modify, or delete any other files in
+  the user's Google Drive. It does not request access to Gmail, Contacts,
+  Calendar, Photos, location, or any other Google service.
+</p>
+
+<h2>2. How the app uses that data</h2>
+<p>
+  Data is used for one purpose only: transferring files generated on the
+  operator's own server into a folder in the operator's own Google Drive, and
+  keeping that folder in sync. The app performs no analytics, profiling,
+  advertising, or marketing use of the data.
+</p>
+
+<h2>3. Storage and retention</h2>
+<p>
+  Files live in the operator's Google Drive account, under the user's own
+  control. OAuth credentials (a refresh token) are stored locally on the
+  operator's own server with restricted file permissions, and are never
+  transmitted anywhere except to Google's token endpoint for authentication.
+  Data is retained for as long as the operator chooses to keep the files; the
+  operator can delete them at any time, and removing the app's access in the
+  Google Account permissions page revokes the stored credentials.
+</p>
+
+<h2>4. Sharing and third parties</h2>
+<p>
+  Google user data is <strong>not sold, rented, or shared</strong> with any third
+  party. The app transfers data only between the operator's server and Google's
+  own APIs. No sub-processors, no advertising networks, and no external
+  analytics services are involved.
+</p>
+
+<h2>5. Machine learning</h2>
+<p>
+  Google user data accessed by this app is <strong>not</strong> used to develop,
+  improve, or train generalized or non-personalized artificial-intelligence or
+  machine-learning models.
+</p>
+
+<h2>6. Security</h2>
+<p>
+  Credentials are stored on the operator's private server, and access to that
+  server requires authenticated access controlled by the operator. The app uses
+  HTTPS for all communication with Google APIs.
+</p>
+
+<h2>7. Changes to this policy</h2>
+<p>
+  If this policy changes, the updated version will be published at this URL with
+  a revised "last updated" date.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+  Questions about this policy or about data handling:
+  <a href="mailto:uzielfortyseven@gmail.com">uzielfortyseven@gmail.com</a>
+</p>
+
+<footer>
+  <p><a href="index.html">Home</a> &middot; Rclone Drive Sync</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rclone Drive Sync</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; color: #666; font-size: .9rem; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Rclone Drive Sync</h1>
+<p class="sub">A private, single-user automation tool.</p>
+
+<h2>What this app does</h2>
+<p>
+  Rclone Drive Sync is a personal automation running on my own home server (a
+  Raspberry Pi). It uploads files that the server generates &mdash; reports,
+  documents, and archives &mdash; into a folder in my own Google Drive so that I
+  can access them from other devices.
+</p>
+<p>
+  The tool is built on <a href="https://rclone.org/">rclone</a>, an open-source
+  command-line program for managing cloud storage. There is no public sign-up,
+  no other users, and no web front end: the only person who ever authorizes it
+  is the owner.
+</p>
+
+<h2>How it accesses Google Drive</h2>
+<p>
+  It requests the <code>drive.file</code> permission only. That means it can see
+  and manage <strong>only the files and folders it created itself</strong>. It
+  cannot read, list, modify, or delete anything else in the Drive account.
+</p>
+
+<h2>Data handling</h2>
+<p>
+  Files are transferred directly between the server and Google Drive. Nothing is
+  sent to any third party, and no Google user data is sold, shared, or used to
+  train machine-learning models. Full details are in the
+  <a href="privacy.html">privacy policy</a>.
+</p>
+
+<footer>
+  <p>
+    <a href="privacy.html">Privacy policy</a> &middot;
+    Contact: <a href="mailto:uzielfortyseven@gmail.com">uzielfortyseven@gmail.com</a>
+  </p>
+  <p>Last updated: 14 September 2026</p>
+</footer>
+
+</body>
+</html>
